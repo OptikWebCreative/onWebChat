@@ -36,6 +36,6 @@ class onWebChatPlugin extends Plugin
      */
     public function onTwigSiteVariables()
     {
-        $twig->twig_vars['onwebchat'] = $twig->twig->render('partials/chat.html.twig');
+        $twig->twig_vars['onwebchat'] = $twig->twig->render('partials/onwebchat.html.twig');
     }
 }
