@@ -1,3 +1,10 @@
+# v1.0.0
+## 20/06/2016
+
+1. [](#new)
+    * Script now renders in the page, correctly.
+    * Cleared out testing values
+
 # v0.0.5
 ## 20/06/2016
 
