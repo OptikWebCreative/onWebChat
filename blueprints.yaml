@@ -6,10 +6,10 @@ author:
   name: Rich Starkie @ NeonTiger Web
   email: web@neontigeruk.com
   url: http://www.neontigerweb.com
-homepage: https://github.com/giansi/grav-plugin-cookies-policy
-demo: https://github.com/giansi/grav-plugin-cookies-policy
+homepage: https://github.com/NeonTigerWeb/onWebChat
+demo: https://github.com/NeonTigerWeb/onWebChat
 keywords: plugin, live, chat, onwebchat, interaction
-bugs: https://github.com/giansi/grav-plugin-cookies-policy/issues
+bugs: https://github.com/NeonTigerWeb/onWebChat/issues
 license: MIT
 
 form:
