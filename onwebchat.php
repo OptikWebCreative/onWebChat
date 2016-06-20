@@ -1,13 +1,14 @@
 <?php
 namespace Grav\Plugin;
 
+use Grav\Common\Grav;
 use Grav\Common\Plugin;
 
 class onWebChatPlugin extends Plugin
 {
     public static function getSubscribedEvents() {
         return [
-            'onPluginsInitialized' => ['onPluginsInitialized', 0],
+            'onPluginsInitialized' => ['onPluginsInitialized', 0]
         ];
     }
 
@@ -19,36 +20,18 @@ class onWebChatPlugin extends Plugin
         }
 
         $this->enable([
-
-            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
-            'onTwigSiteVariables' => ['onTwigSiteVariables', 0],
+            'onPageInitialized' => ['onPageInitialized', 0]
         ]);
     }
-
-    /**
-     * Add current directory to twig lookup paths.
-     */
-    public function onTwigTemplatePaths()
+	
+    public function onPageInitialized()
     {
-        $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
-    }
-
-    /**
-     * if enabled on this page, load the JS + CSS theme.
-     */
-    public function onTwigSiteVariables()
-    {
-       
-        $type = strtolower($this->config->get('plugins.onwebchat.chatid'));
-        if (empty($type)){
-            throw new \InvalidArgumentException('The Chat ID value must be defined. At the moment it is empty. Without a ChatID you will not be able to connect to your Chat Box.  If you do not have a ChatID you can get it from your onWebChat Control Panel.');
+        $pluginsobject = (array) $this->config->get('plugins');
+        $pageobject = $this->grav['page'];
+		if (isset($pluginsobject['onwebchat'])) {
+            if ($pluginsobject['onwebchat']['enabled']) {
+				$this->grav['assets']->addInlineJs('var onWebChat={ar:[], set: function(a,b){if (typeof onWebChat_==="undefined"){this.ar.push([a,b]);}else{onWebChat_.set(a,b);}},get:function(a){return(onWebChat_.get(a));},w:(function(){ var ga=document.createElement("script"); ga.type = "text/javascript";ga.async=1;ga.src="//www.onwebchat.com/clientchat/'.$this->config->get('plugins.onwebchat.chatid').'";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s);})()}');
+            }
         }
-
-    $twig = $this->grav['twig'];
-        $twig->twig_vars['onwebchat_chatid'] = $this->config->get('plugins.onwebchat.chatid');
-        
-        $twig->twig_vars['onwebchat'] = $twig->twig->render('partials/onwebchat.html.twig', array(
-        'onwebchat_chatid' => $twig->twig_vars['onwebchat_chatid']
-        ));
     }
 }
