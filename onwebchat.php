@@ -19,8 +19,7 @@ class onWebChatPlugin extends Plugin
         }
 
         $this->enable([
-            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
-            'onTwigSiteVariables' => ['onTwigSiteVariables', 0],
+            
         ]);
     }
 
