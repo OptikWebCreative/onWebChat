@@ -19,7 +19,7 @@ class onWebChatPlugin extends Plugin
         }
 
         $this->enable([
-            
+            $twig->twig_vars['onwebchat'] = $twig->twig->render('partials/onwebchat.html.twig');
         ]);
     }
 
