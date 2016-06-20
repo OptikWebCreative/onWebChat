@@ -47,6 +47,8 @@ class onWebChatPlugin extends Plugin
     $twig = $this->grav['twig'];
         $twig->twig_vars['onwebchat_chatid'] = $this->config->get('plugins.onwebchat.chatid');
         
-        $twig->twig_vars['onwebchat'] = $twig->twig->render('partials/onwebchat.html.twig');
+        $twig->twig_vars['onwebchat'] = $twig->twig->render('partials/onwebchat.html.twig', array(
+        'onwebchat_chatid' => $twig->twig_vars['onwebchat_chatid']
+        ));
     }
 }
