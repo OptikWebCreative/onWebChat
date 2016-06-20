@@ -1,0 +1,34 @@
+name: OnWebChat
+version: 1.0.1
+description: 'Displays a Live Chat Box from OnWebChat on your website'
+icon: comments-o
+author:
+  name: Rich Starkie @ NeonTiger Web
+  email: web@neontigeruk.com
+  url: http://www.neontigerweb.com
+homepage: https://github.com/giansi/grav-plugin-cookies-policy
+demo: https://github.com/giansi/grav-plugin-cookies-policy
+keywords: plugin, live, chat, onwebchat, interaction
+bugs: https://github.com/giansi/grav-plugin-cookies-policy/issues
+license: MIT
+
+form:
+  validation: strict
+  fields:
+      enabled:
+        type: toggle
+        label: Plugin status
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+
+      chatid:
+        type: text
+        label: Chat ID
+        size: medium
+        placeholder: Enter Your Chat ID from your OnWebChat Settings Page
+        help: Enter Your Chat ID from your OnWebChat Settings Page
