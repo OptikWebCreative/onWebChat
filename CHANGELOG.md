@@ -1,10 +1,14 @@
+# v1.1.0
+## 22/06/2016
+1. [](#new)   
+   * Updated so default is ON for all pages, can be disabled in FrontMatter by adding `onwebchat: false`
+
 # v1.0.0
 ## 20/06/2016
 
 1. [](#new)
     * Script now renders in the page, correctly.
     * Cleared out testing values
-    * Updated so default is ON for all pages, can be disabled in FrontMatter by adding `onwebchat: false`
     * Removed partial as no longer needed
     * Thanks to @OleVik for assistance and making plugin automatically add to pages if plugin is enabled.
 
