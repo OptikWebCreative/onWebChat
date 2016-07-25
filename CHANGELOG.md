@@ -1,3 +1,8 @@
+# v1.1.1
+## 25/07/2016
+1. [](#update)
+   * Updated company and contact details to correct branding after name change
+
 # v1.1.0
 ## 22/06/2016
 1. [](#new)   
