@@ -3,13 +3,13 @@ version: 1.1.0
 description: 'Displays a Live Chat Box from OnWebChat on your website'
 icon: comments-o
 author:
-  name: Rich Starkie @ NeonTiger Web
-  email: web@neontigeruk.com
-  url: http://www.neontigerweb.com
-homepage: http://www.neontigerweb.com/grav/plugins/onwebchat
-demo: http://www.neontigerweb.com
+  name: Rich Starkie
+  email: rich@optikwebcreative.com
+  url: http://www.optikwebcreative.com
+homepage: http://www.optikwebcreative.com/web-development/grav
+demo: http://www.optikwebcreative.com
 keywords: plugin, live, chat, onwebchat, interaction
-bugs: https://github.com/NeonTigerWeb/onWebChat/issues
+bugs: https://github.com/OptikWebCreative/onWebChat/issues
 license: MIT
 
 form:
