@@ -50,7 +50,7 @@ We have disabled the plugin using this code on the [Contact](http://www.optikweb
 
 ### Acknowledgements
 
-![onWebChat Logo](https://www.onwebchat.com/images/logos/logo.png){.image-right} Optik Web Creative would like to thank the onWebChat for permission to create this plugin.
+Optik Web Creative would like to thank the onWebChat for permission to create this plugin.
 
 Optik Web Creative would also like to thank the [GRAV Gitter Community](https://gitter.im/getgrav/grav?target=_blank) for valuable assistance with bug-testing and problem resolution.
 
