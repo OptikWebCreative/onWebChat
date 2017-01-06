@@ -1,3 +1,8 @@
+# v1.1.3
+## 06/01/2017
+1. [](#update)
+    * Updated Company Information and new URLs for HowTo and Demo
+
 # v1.1.1
 ## 25/07/2016
 1. [](#update)
