@@ -1,3 +1,8 @@
+# v1.2
+## 21/8/2017
+1. [](#update)
+   * Merged PR by HughBris, setting Default State toggle - Thanks HughBris :) that was something I wanted to do, but time hasnt been on my side lately.
+
 # v1.1.3
 ## 06/01/2017
 1. [](#update)
