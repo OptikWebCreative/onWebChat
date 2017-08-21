@@ -34,16 +34,22 @@ Add the ChatId from your OnWebChat control panel into the admin panel or the onw
 
 Browse to your website and you will have your onWebChat plugin enabled and visible for your website users to contact you (or your client)
 
-onWebChat is by default enabled on ***all*** pages of your GRAV website. 
+onWebChat is by default enabled on ***all*** pages of your GRAV website. If you want to change the default status for all pages, change the field "_Active on pages by default_" or set `active_default` in onwebchat.yaml
 
-# 2. Controlling onWebChat Plugin (From v1.1)
+# 2. Controlling onWebChat Plugin
 
-You can turn off the onWebChat plugin for specific pages, by adding a line to the frontmatter of any of your pages.
+You can toggle the onWebChat plugin for specific pages by adding a line to their frontmatter. The default behaviour, without this line, is determined by the value of the plugin configuration `active_default` (or "_Active on pages by default_" in the Admin plugin dashboard).
 
-To achieve this, you need to add the following line to the frontmatter of the pages that you do  **NOT** want it to be on.
+To achieve this, you need to add one of the following lines to the frontmatter of the pages that you want to set individually:
 
 ```
 onwebchat: false
+```
+
+_or_
+
+```
+onwebchat: true
 ```
 
 We have disabled the plugin using this code on the [Contact](http://www.optikwebcreative.com/contact) page.

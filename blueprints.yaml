@@ -26,6 +26,18 @@ form:
         validate:
           type: bool
 
+      default_active:
+        type: toggle
+        label: Active on pages by default
+        help: 'Should onWebChat be active on every page unless specified in its page configuration?'
+        highlight: 1
+        default: 1
+        options:
+          1: Yes
+          0: No
+        validate:
+          type: bool
+
       chatid:
         type: text
         label: Chat ID
