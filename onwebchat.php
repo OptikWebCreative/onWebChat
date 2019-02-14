@@ -35,7 +35,7 @@ class onWebChatPlugin extends Plugin
 			$activate = $pageobject->header()->onwebchat;
 		}
 		else {
-			$activate = $this->config->get('plugins.onwebchat.active_default');
+			$activate = $this->config->get('plugins.onwebchat.default_active');
 		}
 
 		if ($activate) {
